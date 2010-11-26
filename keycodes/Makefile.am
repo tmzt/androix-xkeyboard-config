@@ -8,6 +8,7 @@ amiga \
 ataritt \
 empty \
 evdev \
+androidkeycodes \
 fujitsu \
 hp \
 ibm \
