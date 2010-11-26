@@ -7,7 +7,7 @@ default xkb_keycodes "androidkeycodes" {
         # Added for pc105 compatibility
         <LSGT> = 94;
 
-	<TLDE> = 49;
+	<TLDE> = 77; //49;
 	<AE01> = 45; //10;
 	<AE02> = 51; //11;
 	<AE03> = 33; //12;
@@ -18,9 +18,10 @@ default xkb_keycodes "androidkeycodes" {
 	<AE08> = 37; //17;
 	<AE09> = 43; //18;
 	<AE10> = 44; //19;
+	<BKSP> = 67;
 	<AE11> = 20; //not used
 	<AE12> = 21; //not used
-	<BKSP> = 22; //not used
+	//<BKSP> = 22; //not used
 
 	<TAB> = 23;  //com
 	<AD01> = 29; //24;
@@ -32,6 +33,7 @@ default xkb_keycodes "androidkeycodes" {
 	<AD07> = 38; //30;
 	<AD08> = 39; // 31;
 	<AD09> = 40; // 32;
+	<RTRN> = 66;
 	//<AD10> = 33; //not used
 	//<AD11> = 34; //not used
 	//<AD12> = 35; //not used
@@ -39,8 +41,8 @@ default xkb_keycodes "androidkeycodes" {
 	//alias <AC12> = <BKSL>;
 	//<RTRN> = 66; //36;
 
-	<CAPS> = 66; //ALT
-		     //menu (82)
+	<LALT> = 57; //alt
+	<MENU> = 82; //menu 
 	<AC01> = 54; //38; 
 	<AC02> = 52; //39;
 	<AC03> = 31; //40;
@@ -50,7 +52,8 @@ default xkb_keycodes "androidkeycodes" {
 	<AC07> = 41; //44;
 	<AC08> = 105; //45; //question mark
 	<AC09> = 84; //46; //search
-	<AC10> = 58; //47; //rightalt
+	<RALT> = 58; //rightalt
+	//<AC10> = 58; //47; //rightalt
 	//<AC11> = 48; //not used
 
 	<LFSH> = 59; //50;	// left shift
@@ -148,7 +151,7 @@ default xkb_keycodes "androidkeycodes" {
 	// Keys that are generated on Japanese keyboards
 
 	//<HZTG> =  93;	// Hankaku/Zenkakau toggle - not actually used
-	alias <HZTG> = <TLDE>;
+	//alias <HZTG> = <TLDE>;
 	<HKTG> = 101;	// Hiragana/Katakana toggle
 	<AB11> = 97;	// backslash/underscore
 	<HENK> = 100;	// Henkan

@@ -77,6 +77,8 @@ xkb_symbols "us" {
 	//not yet mapped
         include "androidkeycodes(common_keys)"
         include "level3(ralt_switch)"
+	name[Group1] = "US";
+	name[Group2] = "AltGr";
 
         //first row
         key <AE01> { [ q, Q, Tab, Tab ] };
