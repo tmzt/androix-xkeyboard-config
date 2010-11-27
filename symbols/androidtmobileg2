@@ -1,0 +1,132 @@
+partial alphanumeric_keys
+xkb_symbols "it" {
+	include "htcdream(common_keys)"
+	include "level3(ralt_switch)"
+	name[Group1]= "Italy";
+
+	//first row
+        key <AE01> { [ q, Q, 1, 1 ] };
+	key <AE02> { [ w, W, 2, 2 ] };
+        key <AE03> { [ e, E, 3, 3 ] };
+	key <AE04> { [ r, R, 4, 4 ] };
+	key <AE05> { [ t, T, 5, 5 ] };
+	key <AE06> { [ y, Y, 6, 6 ] };
+	key <AE07> { [ u, U, 7, 7 ] };
+	key <AE08> { [ i, I, 8, 8 ] };
+	key <AE00> { [ o, O, 9, 9 ] };
+	key <AE10> { [ p, P, 0, 0 ] };
+
+	//second row
+	key <AD01> { [ a, A, exclam, exclam ] };
+	key <AD02> { [ s, S, pound, pound ] };
+        key <AD03> { [ d ,D, dollar, dollar ] };
+        key <AD04> { [ f, F, percent, percent ] };
+        key <AD05> { [ g, G, ampersand, ampersand ] };
+        key <AD06> { [ h, H, asterisk, asterisk ] };
+        key <AD07> { [ j, J, leftpara, minus ] };
+        key <AD08> { [ k, K, plus, plus ] };
+        key <AD09> { [ l, L, equal, equal ] };
+
+	//forth row
+
+};
+
+partial alphanumeric_keys
+xkb_symbols "de" {
+	include "htcdream(common_keys)"
+	include "level3(ralt_switch)"
+        name[Group1]= "Germany";
+
+        //second row
+        key <AD01> { [ q, Q, Tab, Tab ] };
+        key <AD02> { [ w, W, grave, grave ] };
+        key <AD03> { [ e, E , EuroSign, EuroSign ] };
+        key <AD04> { [ r, R, underscore, underscore ] };
+        key <AD05> { [ t, T ] };
+        key <AD06> { [ z, Z, division, division ] };
+        key <AD07> { [ u, U ] };
+        key <AD08> { [ i, I, minus, minus ] };
+        key <AD00> { [ o, O ] };
+        key <AD10> { [ p, P, equal, equal ] };
+
+        //third row
+        key <AC01> { [ a, A, adiaeresis, adiaeresis ] };
+        key <AC02> { [ s, S ] };
+        key <AC03> { [ d ,D, backslash, backslash ] };
+        key <AC04> { [ f, F, braceleft, braceleft ] };
+        key <AC05> { [ g, G, braceright, braceright ] };
+        key <AC06> { [ h, H, multiply, multiply ] };
+        key <AC07> { [ j, J, colon, colon ] };
+        key <AC08> { [ k, K, plus, plus ] };
+        key <AC09> { [ l, L, apostrophe, apostrophe ] };
+
+	//forth row
+	key <AB01> { [ y, Y, bar, bar ] };
+	key <AB02> { [ x, X, bracketleft, bracketleft ] };
+        key <AB03> { [ c, C, bracketright, bracketright ] };
+        key <AB04> { [ v, V, less, less ] };
+        key <AB05> { [ b, B, greater, greater ] };
+        key <AB06> { [ n, N, semicolon, semicolon ] };
+        key <AB07> { [ m, M, quotedbl, quotedbl ] };
+        key <AB08> { [ comma, comma, question, question ] };
+};
+
+//based on http://upload.wikimedia.org/wikipedia/commons/1/18/T-Mobile_G1_launch_event_2.jpg
+partial alphanumeric_keys
+xkb_symbols "us" {
+	//not yet mapped
+        include "androidkeycodes(common_keys)"
+        include "level3(ralt_switch)"
+	include "level3(lalt_switch)"
+	name[Group1] = "US";
+	name[Group2] = "AltGr";
+
+        //first row
+        key <AE01> { [ q, Q, 1, 1 ] };
+        key <AE02> { [ w, W, 2, 2 ] };
+        key <AE03> { [ e, E, 3, 3 ] };
+        key <AE04> { [ r, R, 4, 4 ] };
+        key <AE05> { [ t, T, 5, 5 ] };
+        key <AE06> { [ y, Y, 6, 6 ] };
+        key <AE07> { [ u, U, 7, 7 ] };
+        key <AE08> { [ i, I, 8, 8 ] };
+        key <AE09> { [ o, O, 9, 9 ] };
+        key <AE10> { [ p, P, 0, 0 ] };
+
+        //second row
+        key <AD01> { [ a, A, exclam, exclam ] };
+        key <AD02> { [ s, S, numbersign, numbersign ] };
+        key <AD03> { [ d ,D, dollar, dollar ] };
+        key <AD04> { [ f, F, percent, percent ] };
+        key <AD05> { [ g, G, ampersand, ampersand ] };
+        key <AD06> { [ h, H, asterisk, asterisk ] }; 
+	key <AD07> { [ j, J, parenleft, parenleft ] };
+	key <AD08> { [ k, K, parenright, parenright ] };
+	key <AD09> { [ l, L, slash, slash ] };
+
+        //third row
+        key <AC01> { [ z, Z, Tab, Tab ] };
+        key <AC02> { [ x, X, bar, bar ] };
+        key <AC03> { [ c, C, underscore, underscore ] };
+        key <AC04> { [ v, V, minus, minus ] };
+        key <AC05> { [ b, B, plus, plus ] };
+        key <AC06> { [ n, N, equal, equal ] };
+        key <AC07> { [ m, M, apostrophe, apostrophe ] };
+        key <AC08> { [ question, question, quotedbl, quotedbl ] };
+
+};
+
+
+xkb_symbols "common_keys" {
+	key <BKSP> { [ BackSpace ] };
+	key <RTRN> { [ Return ] };
+
+	//fifth row
+	key <LFSH> { [ Shift_L ] };
+	key <SPCE> { [ space ] };
+	key <AB09> { [ period, period, slash, slash ] };
+	key <RTSH> { [ Shift_R ] };
+
+	//modifiers
+	modifier_map Shift { <LFSH>, <RTSH> };
+};
